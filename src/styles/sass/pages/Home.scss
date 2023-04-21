@@ -1,0 +1,116 @@
+// Components
+@import "../components/Navbar.scss";
+
+.titleCard {
+    margin: auto;
+    width: 516px;
+
+    .titleHome {
+        animation: letterTitleAnimation 2s ease-out;
+        color: $colorText;
+        font-family: $titleFont;
+        font-size: 130px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        padding-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .borderBottonTitle {
+        animation: borderAnimation 2s ease-out;
+        background-color: $colorText;
+        height: 2px;
+        margin: -25px auto 20px auto;
+        width: 100%;
+    }
+    
+}
+
+.formatImage {
+    border-radius: 50%;
+    height: 175px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    width: 175px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.content {
+    animation: textOpacity 2.5s ease-out;
+    margin: auto;
+
+    .textHome {
+        color: $colorText;
+        font-family: $textFont;
+        padding: 0 5%;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+}
+
+.social {
+    animation: textOpacity 2.5s ease-out;
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    
+    
+        a {
+            color: $colorText;
+            text-decoration: none;
+            
+            .icon {
+                font-size: 20px;
+                margin: 0 2px;
+
+                &:hover {
+                    color: rgb(66, 57, 182);
+                    transition: 0.5s;
+                }
+
+            }
+            
+        }
+    }
+    
+}
+
+.navbarArea {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+
+    .borderTopNavbar {
+        animation: borderAnimation 2s ease-out;
+        background-color: $colorText;
+        height: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

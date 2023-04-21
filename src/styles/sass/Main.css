@@ -1,0 +1,179 @@
+/* Mobile */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Sofia+Sans+Condensed:wght@100;300;500&display=swap");
+@media (max-width: 351px) {
+  .titleCard {
+    width: 100% !important;
+  }
+  .titleCard .titleHome {
+    font-size: 60px !important;
+  }
+  .titleCard .borderBottonTitle {
+    margin-top: -10px !important;
+    width: 80% !important;
+  }
+  .formatImage {
+    height: 110px !important;
+    width: 110px !important;
+  }
+  .content .textHome {
+    font-size: 13px;
+  }
+}
+@media (min-width: 351px) {
+  .titleCard {
+    width: 330px !important;
+  }
+  .titleCard .titleHome {
+    font-size: 75px !important;
+  }
+  .titleCard .borderBottonTitle {
+    margin-top: -20px !important;
+  }
+  .formatImage {
+    height: 140px !important;
+    width: 140px !important;
+  }
+  .content .textHome {
+    font-size: 14px;
+  }
+}
+/* SM */
+@media (min-width: 576px) {
+  .titleCard {
+    width: 455px !important;
+  }
+  .titleCard .titleHome {
+    font-size: 90px !important;
+  }
+  .titleCard .borderBottonTitle {
+    margin-top: -20px !important;
+  }
+}
+/* MD */
+/* LG */
+/* XL */
+@media (min-width: 1200px) {
+  .content .textHome {
+    font-size: 14px;
+    padding: 0 13%;
+  }
+}
+/* XXL */
+@keyframes borderAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes letterTitleAnimation {
+  0% {
+    letter-spacing: -5px;
+  }
+  100% {
+    letter-spacing: 3px;
+  }
+}
+@keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.848);
+}
+.nav-item .nav-link:hover {
+  color: rgb(66, 57, 182);
+}
+
+.navbarButton {
+  color: rgba(255, 255, 255, 0.848);
+}
+
+.titleCard {
+  margin: auto;
+  width: 516px;
+}
+.titleCard .titleHome {
+  animation: letterTitleAnimation 2s ease-out;
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size: 130px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.titleCard .borderBottonTitle {
+  animation: borderAnimation 2s ease-out;
+  background-color: rgba(255, 255, 255, 0.848);
+  height: 2px;
+  margin: -25px auto 20px auto;
+  width: 100%;
+}
+
+.formatImage {
+  border-radius: 50%;
+  height: 175px;
+  margin: 0 auto 15px auto;
+  overflow: hidden;
+  width: 175px;
+}
+.formatImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  animation: textOpacity 2.5s ease-out;
+  margin: auto;
+}
+.content .textHome {
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Kanit", sans-serif;
+  padding: 0 5%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.social {
+  animation: textOpacity 2.5s ease-out;
+}
+.social .socialIcons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.social .socialIcons a {
+  color: rgba(255, 255, 255, 0.848);
+  text-decoration: none;
+}
+.social .socialIcons a .icon {
+  font-size: 20px;
+  margin: 0 2px;
+}
+.social .socialIcons a .icon:hover {
+  color: rgb(66, 57, 182);
+  transition: 0.5s;
+}
+
+.navbarArea {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+}
+.navbarArea .borderTopNavbar {
+  animation: borderAnimation 2s ease-out;
+  background-color: rgba(255, 255, 255, 0.848);
+  height: 1px;
+}
+
+/*# sourceMappingURL=Main.css.map */

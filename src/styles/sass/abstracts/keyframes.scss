@@ -1,0 +1,26 @@
+@keyframes borderAnimation {
+    0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+}
+
+@keyframes letterTitleAnimation {
+    0% {
+        letter-spacing: -5px;
+    }
+    100% {
+        letter-spacing: 3px;
+    }
+}
+
+@keyframes textOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
