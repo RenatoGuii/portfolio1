@@ -1,26 +1,28 @@
 /* Mobile */
-@media (max-width: 351px) {
+@media (max-width: 439px) {
+
+
     .titleCard {
         width: 100% !important;
 
         .titleHome {
-            font-size: 60px !important;
+            font-size: 15vw !important;
         }
 
         .borderBottonTitle {
             margin-top: -10px !important;
-            width: 80% !important;
+            width: 100% !important;
         }
     }
  
     .formatImage {
-        height: 110px !important;
-        width: 110px !important;
+        height: 30vw !important;
+        width: 30vw !important;
     }
 
     .content {
         .textHome {
-            font-size: 13px;
+            font-size: 4vw;
         }
     }
 }
@@ -28,7 +30,7 @@
 @media (min-width: 351px) {
 
     .titleCard {
-        width: 330px !important;
+        width: 342px !important;
 
         .titleHome {
             font-size: 75px !important;
@@ -50,6 +52,8 @@
         }
     }
 
+    
+
 }
 
 /* SM */
@@ -70,18 +74,16 @@
 /* MD */
 
 @media (min-width: 768px) {
-   
 }
 
 /* LG */
 
 @media (min-width: 992px) {
-    
 }
 
 /* XL */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {     
     .content {
         .textHome {
             font-size: 14px;
@@ -93,5 +95,13 @@
 /* XXL */
 
 @media (min-width: 1400px) {
+
+}
+
+
+
+
+// Vertical
+@media (max-height: 566px) {
     
 }

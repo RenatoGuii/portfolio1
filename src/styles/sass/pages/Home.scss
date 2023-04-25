@@ -1,31 +1,38 @@
 // Components
 @import "../components/Navbar.scss";
 
-.titleCard {
-    margin: auto;
-    width: 516px;
-
-    .titleHome {
-        animation: letterTitleAnimation 2s ease-out;
-        color: $colorText;
-        font-family: $titleFont;
-        font-size: 130px;
-        font-weight: 100;
-        letter-spacing: 3px;
-        padding-top: 20px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .borderBottonTitle {
-        animation: borderAnimation 2s ease-out;
-        background-color: $colorText;
-        height: 2px;
-        margin: -25px auto 20px auto;
-        width: 100%;
-    }
-    
+.App {
+    display: flex;
 }
+
+.container.main {
+    .titleCard {
+        margin: auto;
+        width: 516px;
+    
+        .titleHome {
+            animation: letterTitleAnimation 2s ease-out;
+            color: $colorText;
+            font-family: $titleFont;
+            font-size: 130px;
+            font-weight: 100;
+            letter-spacing: 3px;
+            padding-top: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    
+        .borderBottonTitle {
+            animation: borderAnimation 2s ease-out;
+            background-color: $colorText;
+            height: 2px;
+            margin: -25px auto 20px auto;
+            width: 100%;
+        }
+        
+    }
+}
+
 
 .formatImage {
     border-radius: 50%;
@@ -84,19 +91,6 @@
     
 }
 
-.navbarArea {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 999;
-
-    .borderTopNavbar {
-        animation: borderAnimation 2s ease-out;
-        background-color: $colorText;
-        height: 1px;
-    }
-}
 
 
 

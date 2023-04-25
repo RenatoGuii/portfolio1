@@ -1,6 +1,7 @@
-import { RxRows } from "react-icons/rx";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Collapse, Navbar, Nav } from "reactstrap";
+import { RxRows } from "react-icons/rx";
 
 export default class Example extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export default class Example extends Component {
       <div className="navbarArea">
         <div className="container borderTopNavbar"></div>
         <div className="container">
-          <Navbar expand="md">
+          <Navbar expand="sm">
             <button
               aria-label="Toggle navigation"
               type="button"
@@ -36,24 +37,24 @@ export default class Example extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <li className="nav-item">
-                  <a href="#/" className="nav-link">
+                  <Link to={"/"} className="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#/" className="nav-link">
+                  <Link to={"/skills"} className="nav-link">
                     Habilidades
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#/" className="nav-link">
+                  <Link to={"/projects"} className="nav-link">
                     Projetos
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#/" className="nav-link">
+                  <Link to={"/contact"} className="nav-link">
                     Contato
-                  </a>
+                  </Link>
                 </li>
               </Nav>
             </Collapse>

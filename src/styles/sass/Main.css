@@ -1,27 +1,27 @@
 /* Mobile */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Sofia+Sans+Condensed:wght@100;300;500&display=swap");
-@media (max-width: 351px) {
+@media (max-width: 439px) {
   .titleCard {
     width: 100% !important;
   }
   .titleCard .titleHome {
-    font-size: 60px !important;
+    font-size: 15vw !important;
   }
   .titleCard .borderBottonTitle {
     margin-top: -10px !important;
-    width: 80% !important;
+    width: 100% !important;
   }
   .formatImage {
-    height: 110px !important;
-    width: 110px !important;
+    height: 30vw !important;
+    width: 30vw !important;
   }
   .content .textHome {
-    font-size: 13px;
+    font-size: 4vw;
   }
 }
 @media (min-width: 351px) {
   .titleCard {
-    width: 330px !important;
+    width: 342px !important;
   }
   .titleCard .titleHome {
     font-size: 75px !important;
@@ -83,22 +83,70 @@
     opacity: 1;
   }
 }
-.nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.848);
+.navbarArea {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 999;
 }
-.nav-item .nav-link:hover {
-  color: rgb(66, 57, 182);
+.navbarArea .borderTopNavbar {
+  animation: borderAnimation 2s ease-out;
+  background-color: rgba(255, 255, 255, 0.848);
+  height: 1px;
+}
+
+.navbar-nav.ml-auto {
+  animation: textOpacity 2.5s ease-out;
+  margin: auto;
+}
+.navbar-nav.ml-auto .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-weight: 300;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.navbar-nav.ml-auto .nav-item .nav-link:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.848);
 }
 
 .navbarButton {
+  animation: textOpacity 2.5s ease-out;
   color: rgba(255, 255, 255, 0.848);
 }
 
-.titleCard {
+.d-flex.flex-column.flex-shrink-0 {
+  animation: textOpacity 1.5s ease-in;
+  height: 100%;
+  width: 48px;
+}
+
+.iconNavMobile {
+  color: rgba(255, 255, 255, 0.848);
+  display: block;
+  font-size: 17px;
+  height: 25px;
+  margin: auto;
+}
+
+.nav-link.py-3.border-bottom.border-top:hover {
+  background-color: grey;
+}
+
+#navLink-home {
+  margin-top: 50%;
+}
+
+.App {
+  display: flex;
+}
+
+.container.main .titleCard {
   margin: auto;
   width: 516px;
 }
-.titleCard .titleHome {
+.container.main .titleCard .titleHome {
   animation: letterTitleAnimation 2s ease-out;
   color: rgba(255, 255, 255, 0.848);
   font-family: "Sofia Sans Condensed", sans-serif;
@@ -109,7 +157,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-.titleCard .borderBottonTitle {
+.container.main .titleCard .borderBottonTitle {
   animation: borderAnimation 2s ease-out;
   background-color: rgba(255, 255, 255, 0.848);
   height: 2px;
@@ -163,17 +211,33 @@
   transition: 0.5s;
 }
 
-.navbarArea {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 999;
+.notFoundText {
+  color: rgba(255, 255, 255, 0.848);
+  margin-top: 40px;
+  text-align: center;
 }
-.navbarArea .borderTopNavbar {
-  animation: borderAnimation 2s ease-out;
+.notFoundText h1, .notFoundText h2 {
+  font-family: "Sofia Sans Condensed", sans-serif;
+  letter-spacing: 2px;
+}
+.notFoundText p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+}
+.notFoundText .returnButton {
+  color: rgba(255, 255, 255, 0.848);
+  border: 2px solid rgba(255, 255, 255, 0.848);
+  border-radius: 10px;
+  font-size: 40px;
+  padding: 5px;
+}
+.notFoundText .returnButton:hover {
   background-color: rgba(255, 255, 255, 0.848);
-  height: 1px;
+  color: black;
+}
+
+.container.main {
+  order: 2;
 }
 
 /*# sourceMappingURL=Main.css.map */

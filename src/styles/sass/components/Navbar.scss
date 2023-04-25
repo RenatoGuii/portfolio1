@@ -1,13 +1,75 @@
-.nav-item {
-    .nav-link {
-        color: rgba(255, 255, 255, 0.848);
 
-        &:hover {
-            color: $colorHover;
-        }
+// Navbar Desktop
+
+.navbarArea {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+
+    .borderTopNavbar {
+        animation: borderAnimation 2s ease-out;
+        background-color: $colorText;
+        height: 1px;
     }
-} 
+}
+
+.navbar-nav.ml-auto {
+    animation: textOpacity 2.5s ease-out;
+    margin: auto;
+
+    .nav-item {
+        .nav-link {
+            color: rgba(255, 255, 255, 0.848) ;
+            font-family: $titleFont;
+            font-weight: 300;
+            margin: 0 15px;
+            text-decoration: none;
+
+            &:hover {
+                outline: 1px solid $colorText;
+            }
+        }
+    } 
+
+}
 
 .navbarButton {
+    animation: textOpacity 2.5s ease-out;
     color: $colorText;
 }
+
+
+
+
+
+
+// Navbar Mobile
+
+.d-flex.flex-column.flex-shrink-0 {
+    animation: textOpacity 1.5s ease-in;
+    height: 100%;
+    width: 48px;
+}
+
+.iconNavMobile {
+    color: $colorText;
+    display: block;
+    font-size: 17px;
+    height: 25px;
+    margin: auto;
+}
+
+.nav-link.py-3.border-bottom.border-top {
+    &:hover {
+        background-color: grey;
+    }
+}
+
+#navLink-home{
+    margin-top: 50%;
+}
+
+
+

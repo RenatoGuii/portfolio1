@@ -5,3 +5,9 @@
 
 // Pages
 @import "./pages/Home.scss";
+@import "./pages/NotFound.scss";
+
+
+.container.main {
+    order: 2;
+}

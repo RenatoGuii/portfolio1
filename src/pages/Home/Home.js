@@ -8,7 +8,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container main">
       <div className="titleCard">
         <h1 className="titleHome">renato.io</h1>
         <div className="borderBottonTitle"></div>
@@ -18,7 +18,8 @@ const Home = () => {
           <img src={perfil} alt="minha foto" />
         </div>
         <p className="textHome">
-          Olá, meu nome é Renato Guimarães, tenho 19 anos, sou de Fortaleza-CE, e este é meu portfólio.
+          Olá, meu nome é Renato Guimarães, tenho 19 anos, sou de Fortaleza-CE,
+          e este é meu portfólio.
         </p>
 
         <p className="textHome">
@@ -32,16 +33,25 @@ const Home = () => {
 
       <div className="social">
         <div className="socialIcons">
-          <a href="https://www.instagram.com/renatoo.gui/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/renatoo.gui/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiOutlineInstagram className="icon instagram-icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/renato-guimaraes-quirino/"
-            target="_blank" rel="noreferrer" 
+            target="_blank"
+            rel="noreferrer"
           >
             <AiFillLinkedin className="icon linkedin-icon" />
           </a>
-          <a href="https://github.com/RenatoGuii" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/RenatoGuii"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsGithub className="icon github-icon" />
           </a>
         </div>

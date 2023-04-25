@@ -1,0 +1,28 @@
+.notFoundText {
+    color: $colorText;
+    margin-top: 40px;
+    text-align: center;
+
+    h1, h2 {
+        font-family: $titleFont;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: $textFont;
+        font-weight: 200;
+    }
+
+    .returnButton {
+        color: $colorText;
+        border: 2px solid $colorText;
+        border-radius: 10px;
+        font-size: 40px;
+        padding: 5px;
+
+        &:hover {
+            background-color: $colorText;
+            color: black;
+        }
+    }
+}
