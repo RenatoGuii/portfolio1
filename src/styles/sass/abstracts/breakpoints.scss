@@ -30,10 +30,10 @@
 @media (min-width: 351px) {
 
     .titleCard {
-        width: 342px !important;
+        width: 100% !important;
 
         .titleHome {
-            font-size: 75px !important;
+            font-size: 15vw !important;
         }
 
         .borderBottonTitle {
@@ -42,17 +42,15 @@
     }
 
     .formatImage {
-        height: 140px !important;
-        width: 140px !important;
+        height: 25vw !important;
+        width: 25vw !important;
     }
 
     .content {
         .textHome {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
-
-    
 
 }
 
