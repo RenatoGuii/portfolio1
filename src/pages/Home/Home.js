@@ -1,5 +1,6 @@
-// Images
+// Assets
 import perfil from "../../assets/imgs/perfil.jpg";
+import CV from "../../assets/others/cv.pdf"
 
 // Icons
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -55,6 +56,9 @@ const Home = () => {
             <BsGithub className="icon github-icon" />
           </a>
         </div>
+      </div>
+      <div className="download-button">
+        <a href={CV} download>Download CV</a>
       </div>
     </div>
   );

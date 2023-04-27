@@ -1,0 +1,60 @@
+.container.main {
+    .title-skills {
+        animation: letterTitleAnimation 2s;
+        color: $colorText;
+        font-family: $titleFont;
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin: 40px 0 30px 0;
+        text-align: center;
+    }
+
+    .container.skills {
+        animation: textOpacity 2s;
+        justify-content: center;
+
+        .skill-item {
+            background-color: $backgroundSkillItem;
+            border-bottom: 3px solid $colorText;
+            border-radius: 20px 0 20px 0;
+            display: inline-block;
+            height: 100px;
+            padding: 10px;
+            transition: 0.5s;
+            width: 100px;
+
+            &:hover {
+                cursor: pointer;
+                height: 120px;
+                width: 120px;
+
+                p {
+                    font-size: 20px;
+                    transition: 0.5s;
+                }
+
+                .icon-skill {
+                    font-size: 35px;
+                    transition: 0.5s;
+                }
+            }
+
+            p {
+                color: $colorText;
+                font-family: $titleFont;
+                letter-spacing: 1px;
+                text-align: center;
+                transition: 0.5s;
+            }
+
+            .icon-skill {
+                color: $colorText;
+                display: block;
+                font-size: 30px;
+                margin: auto;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+

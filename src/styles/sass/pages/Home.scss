@@ -36,10 +36,12 @@
 
 .formatImage {
     border-radius: 50%;
-    height: 175px;
+    height: 23vw;
     margin: 0 auto 15px auto;
+    max-height: 175px;
+    max-width: 175px;
     overflow: hidden;
-    width: 175px;
+    width: 23vw;
 
     img {
         width: 100%;
@@ -80,7 +82,7 @@
                 margin: 0 2px;
 
                 &:hover {
-                    color: rgb(66, 57, 182);
+                    color: $colorSocialHover;
                     transition: 0.5s;
                 }
 
@@ -89,6 +91,28 @@
         }
     }
     
+}
+
+.download-button {
+    animation: textOpacity 2s;
+    text-align: center;
+
+    a {
+        background-color: $colorText;
+        border-radius: 15px;
+        color: black;
+        font-family: $titleFont;
+        padding: 10px;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: black;
+            border: 1px solid $colorText;
+            color: $colorText;
+            transition: 0.5s;
+        }
+    }
 }
 
 

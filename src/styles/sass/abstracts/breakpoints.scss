@@ -14,11 +14,6 @@
             width: 100% !important;
         }
     }
- 
-    .formatImage {
-        height: 30vw !important;
-        width: 30vw !important;
-    }
 
     .content {
         .textHome {
@@ -39,11 +34,6 @@
         .borderBottonTitle {
             margin-top: -16px !important;
         }
-    }
-
-    .formatImage {
-        height: 25vw !important;
-        width: 25vw !important;
     }
 
     .content {
@@ -67,6 +57,7 @@
             margin-top: -20px !important; 
         }
     }
+
 }
 
 /* MD */
@@ -94,12 +85,4 @@
 
 @media (min-width: 1400px) {
 
-}
-
-
-
-
-// Vertical
-@media (max-height: 566px) {
-    
 }

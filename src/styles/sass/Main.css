@@ -11,10 +11,6 @@
     margin-top: -10px !important;
     width: 100% !important;
   }
-  .formatImage {
-    height: 30vw !important;
-    width: 30vw !important;
-  }
   .content .textHome {
     font-size: 4.5vw;
   }
@@ -28,10 +24,6 @@
   }
   .titleCard .borderBottonTitle {
     margin-top: -16px !important;
-  }
-  .formatImage {
-    height: 25vw !important;
-    width: 25vw !important;
   }
   .content .textHome {
     font-size: 15px;
@@ -69,7 +61,7 @@
 }
 @keyframes letterTitleAnimation {
   0% {
-    letter-spacing: -5px;
+    letter-spacing: -3px;
   }
   100% {
     letter-spacing: 3px;
@@ -167,10 +159,12 @@
 
 .formatImage {
   border-radius: 50%;
-  height: 175px;
+  height: 23vw;
   margin: 0 auto 15px auto;
+  max-height: 175px;
+  max-width: 175px;
   overflow: hidden;
-  width: 175px;
+  width: 23vw;
 }
 .formatImage img {
   width: 100%;
@@ -208,6 +202,77 @@
 }
 .social .socialIcons a .icon:hover {
   color: rgb(66, 57, 182);
+  transition: 0.5s;
+}
+
+.download-button {
+  animation: textOpacity 2s;
+  text-align: center;
+}
+.download-button a {
+  background-color: rgba(255, 255, 255, 0.848);
+  border-radius: 15px;
+  color: black;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.download-button a:hover {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.848);
+  color: rgba(255, 255, 255, 0.848);
+  transition: 0.5s;
+}
+
+.container.main .title-skills {
+  animation: letterTitleAnimation 2s;
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+.container.main .container.skills {
+  animation: textOpacity 2s;
+  justify-content: center;
+}
+.container.main .container.skills .skill-item {
+  background-color: rgb(56, 55, 55);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.848);
+  border-radius: 20px 0 20px 0;
+  display: inline-block;
+  height: 100px;
+  padding: 10px;
+  transition: 0.5s;
+  width: 100px;
+}
+.container.main .container.skills .skill-item:hover {
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+}
+.container.main .container.skills .skill-item:hover p {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.container.main .container.skills .skill-item:hover .icon-skill {
+  font-size: 35px;
+  transition: 0.5s;
+}
+.container.main .container.skills .skill-item p {
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: 0.5s;
+}
+.container.main .container.skills .skill-item .icon-skill {
+  color: rgba(255, 255, 255, 0.848);
+  display: block;
+  font-size: 30px;
+  margin: auto;
   transition: 0.5s;
 }
 
