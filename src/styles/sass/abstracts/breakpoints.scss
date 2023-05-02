@@ -1,6 +1,7 @@
 /* Mobile */
 @media (max-width: 351px) {
 
+    // Home
 
     .titleCard {
         width: 100% !important;
@@ -17,12 +18,25 @@
 
     .content {
         .textHome {
-            font-size: 4.5vw;
+            font-size: 4vw;
         }
     }
+
+    // All
+    .container.main.home,
+    .container.main.skills,
+    .container.main.projects,
+    .container.main.contact,
+    .container.main.not-found {
+        margin-bottom: 100px;
+    }
+
+    
 }
 
 @media (min-width: 351px) {
+
+    // Home
 
     .titleCard {
         width: 100% !important;
@@ -46,6 +60,9 @@
 
 /* SM */
 @media (min-width: 576px) {
+
+    // Home
+
     .titleCard {
         width: 455px !important;
 
@@ -72,7 +89,10 @@
 
 /* XL */
 
-@media (min-width: 1200px) {     
+@media (min-width: 1200px) { 
+    
+    // Home
+
     .content {
         .textHome {
             font-size: 14px;
@@ -85,4 +105,19 @@
 
 @media (min-width: 1400px) {
 
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    // All
+    .container.main.home,
+    .container.main.skills,
+    .container.main.projects,
+    .container.main.contact,
+    .container.main.not-found {
+        margin-bottom: 5%;
+    }
 }

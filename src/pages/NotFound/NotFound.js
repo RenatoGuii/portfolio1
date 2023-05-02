@@ -4,7 +4,7 @@ import { BsArrowReturnLeft } from "react-icons/bs";
 
 const NotFound = () => {
   return (
-    <div className="container main">
+    <div className="container main not-found">
       <div className="notFoundText">
         <h2>ERROR 404</h2>
         <h1>Opa! Algo deu errado.</h1>

@@ -11,14 +11,9 @@
         width: 516px;
     
         .titleHome {
-            animation: letterTitleAnimation 2s ease-out;
-            color: $colorText;
-            font-family: $titleFont;
+            @include titlePage (100);
             font-size: 130px;
-            font-weight: 100;
-            letter-spacing: 3px;
             padding-top: 20px;
-            text-align: center;
             text-transform: uppercase;
         }
     

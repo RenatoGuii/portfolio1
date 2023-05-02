@@ -1,0 +1,14 @@
+@mixin titlePage ($fontWeight) {
+    animation: letterTitleAnimation 2s;
+    color: $colorText;
+    font-family: $titleFont;
+    font-weight: $fontWeight;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+@mixin backgroundProject {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

@@ -1,11 +1,13 @@
 // Abstracts
 @import "../sass/abstracts/breakpoints.scss";
 @import "../sass/abstracts/keyframes.scss";
+@import "../sass/abstracts/mixins.scss";
 @import "../sass/abstracts/variables.scss";
 
 // Pages
 @import "./pages/Home.scss";
 @import "./pages/Skill.scss";
+@import "./pages/Project.scss";
 @import "./pages/NotFound.scss";
 
 

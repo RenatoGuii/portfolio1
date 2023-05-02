@@ -9,7 +9,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <div className="container main">
+    <div className="container main home">
       <div className="titleCard">
         <h1 className="titleHome">renato.io</h1>
         <div className="borderBottonTitle"></div>

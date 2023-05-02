@@ -12,7 +12,14 @@
     width: 100% !important;
   }
   .content .textHome {
-    font-size: 4.5vw;
+    font-size: 4vw;
+  }
+  .container.main.home,
+  .container.main.skills,
+  .container.main.projects,
+  .container.main.contact,
+  .container.main.not-found {
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 351px) {
@@ -51,6 +58,15 @@
   }
 }
 /* XXL */
+@media (max-width: 576px) {
+  .container.main.home,
+  .container.main.skills,
+  .container.main.projects,
+  .container.main.contact,
+  .container.main.not-found {
+    margin-bottom: 5%;
+  }
+}
 @keyframes borderAnimation {
   0% {
     transform: scaleX(0);
@@ -75,7 +91,27 @@
     opacity: 1;
   }
 }
+@keyframes menuProject {
+  0% {
+    bottom: -47px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    display: flex;
+    opacity: 1;
+  }
+}
+@keyframes menuProjectText {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin-bottom: 30px;
+  }
+}
 .navbarArea {
+  background-color: #050505;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -139,14 +175,14 @@
   width: 516px;
 }
 .container.main .titleCard .titleHome {
-  animation: letterTitleAnimation 2s ease-out;
+  animation: letterTitleAnimation 2s;
   color: rgba(255, 255, 255, 0.848);
   font-family: "Sofia Sans Condensed", sans-serif;
-  font-size: 130px;
   font-weight: 100;
   letter-spacing: 3px;
-  padding-top: 20px;
   text-align: center;
+  font-size: 130px;
+  padding-top: 20px;
   text-transform: uppercase;
 }
 .container.main .titleCard .borderBottonTitle {
@@ -231,8 +267,8 @@
   font-family: "Sofia Sans Condensed", sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  margin: 40px 0 30px 0;
   text-align: center;
+  margin: 40px 0 30px 0;
 }
 .container.main .container.skills {
   animation: textOpacity 2s;
@@ -273,6 +309,94 @@
   display: block;
   font-size: 30px;
   margin: auto;
+  transition: 0.5s;
+}
+
+.title-project {
+  animation: letterTitleAnimation 2s;
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.848);
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  width: 250px;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3:hover img {
+  filter: brightness(20%);
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3:hover .hover-info {
+  animation: menuProject 1s forwards;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3:hover .textProject {
+  animation: menuProjectText 1s forwards;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 img {
+  filter: brightness(60%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .iconsProject {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .iconsProject .iconProject {
+  color: rgba(255, 255, 255, 0.848);
+  margin: 0 1px;
+  width: 15px;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .textProject {
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  z-index: 5;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info {
+  background-color: #050505;
+  bottom: -47px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info:hover + img {
+  filter: brightness(50%);
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info span, .row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info a {
+  color: rgba(255, 255, 255, 0.848);
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info a {
+  text-decoration: none;
+  padding: 2px 4px;
+  transition: 0.5s;
+}
+.row .col-sm-6.col-md-3.project-item.my-3.mx-3 .hover-info a:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.848);
   transition: 0.5s;
 }
 
