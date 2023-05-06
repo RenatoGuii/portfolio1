@@ -4,9 +4,11 @@
         margin: 40px 0 30px 0;
     }
 
-    .container.skills {
+    .container.row.skills {
         animation: textOpacity 2s;
         justify-content: center;
+        max-width: 936px;
+        margin: auto;
 
         .skill-item {
             background-color: $backgroundSkillItem;
