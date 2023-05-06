@@ -93,7 +93,7 @@ const Projects = () => {
             <DiCss3 className="iconProject" />
             <IoLogoJavascript className="iconProject" />
           </div>
-          <p className="textProject">Interactive-Card</p>
+          <p className="textProject">Interactive Card</p>
           <div className="hover-info">
             <span>27/08/2022</span>
             <a
