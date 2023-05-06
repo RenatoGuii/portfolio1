@@ -1,0 +1,46 @@
+.container.main.contact {
+    .title-contact {
+        @include titlePage (300);
+        margin: 40px 0 30px 0;
+    }
+
+    .container.contacts-content {
+        animation: textOpacity 2s;
+
+        .container.contact {
+            text-align: center;
+
+            .text-contact {
+                color: $colorText;
+                padding-top: 5px;
+                font-family: $textFont;
+            }
+
+            .icon-contact {
+                border: 1px solid $colorText;
+                border-radius: 50%;
+                color: $colorText;
+                font-size: 50px;
+                padding: 10px;
+                transition: 0.5s;
+            }
+
+            #icon-linkedin,
+            #icon-github {
+                &:hover {
+                    border-color: $colorSocialHover;
+                    color: $colorSocialHover;
+                    transition: 0.5s;
+                }
+            }
+
+            #icon-linkedin {
+                margin-right: 10px;
+            }
+
+            #icon-github {
+                margin-left: 10px;
+            }
+        }
+    }
+}

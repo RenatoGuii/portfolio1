@@ -22,16 +22,16 @@
         }
     }
 
-    // All
-    .container.main.home,
-    .container.main.skills,
-    .container.main.projects,
-    .container.main.contact,
-    .container.main.not-found {
-        margin-bottom: 100px;
+    // Contact / Form
+
+    .text-form {
+        word-wrap: break-word;
     }
 
-    
+    .button-form {
+        width: 50px;
+    }
+
 }
 
 @media (min-width: 351px) {
@@ -75,6 +75,18 @@
         }
     }
 
+    .download-button {
+        a {
+            font-size: 14px;
+        }
+    }
+
+    // Projects
+    
+    .container.main.projects {
+        margin-bottom: 60px;
+    }
+
 }
 
 /* MD */
@@ -113,11 +125,31 @@
 
 @media (max-width: 576px) {
     // All
+    
     .container.main.home,
     .container.main.skills,
     .container.main.projects,
     .container.main.contact,
     .container.main.not-found {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+    }
+
+
+    // Home
+
+    .download-button {
+        a {
+            font-size: 12px;
+        }
+    }
+
+    // Contact / Form
+
+    .title-form {
+        font-size: 20px;
+    }
+
+    .text-form {
+        font-size: 13px;
     }
 }

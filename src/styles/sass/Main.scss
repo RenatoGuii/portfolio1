@@ -4,12 +4,16 @@
 @import "../sass/abstracts/mixins.scss";
 @import "../sass/abstracts/variables.scss";
 
+// Components
+@import "../sass/components/Scrollbar.scss";
+@import "./components/Form.scss";
+
 // Pages
 @import "./pages/Home.scss";
 @import "./pages/Skill.scss";
 @import "./pages/Project.scss";
+@import "./pages/Contact.scss";
 @import "./pages/NotFound.scss";
-
 
 .container.main {
     order: 2;

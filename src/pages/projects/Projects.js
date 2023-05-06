@@ -20,7 +20,7 @@ const Projects = () => {
     <div className="container main projects">
       <h1 className="title-project">Projetos</h1>
 
-      <div className="row">
+      <main className="row">
         <div className="col-sm-6 col-md-3 project-item my-3 mx-3">
           <img src={loopstudius} alt="" />
           <div className="iconsProject">
@@ -122,7 +122,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

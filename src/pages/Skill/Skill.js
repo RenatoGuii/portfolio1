@@ -7,12 +7,13 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import { BsGit } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { DiSass } from "react-icons/di";
+import { SiFirebase } from "react-icons/si";
 
 const Skill = () => {
   return (
     <div className="container main skills">
       <h1 className="title-skills">Habilidades</h1>
-      <div className="container row skills">
+      <main className="container row skills">
         <div className="col-md-3 skill-item mx-3 my-3">
           <p>HTML5</p>
           <AiFillHtml5 className="icon-skill" />
@@ -38,6 +39,10 @@ const Skill = () => {
           <DiSass className="icon-skill" />
         </div>
         <div className="col-md-3 skill-item mx-3 my-3">
+          <p>Firebase</p>
+          <SiFirebase className="icon-skill" />
+        </div>
+        <div className="col-md-3 skill-item mx-3 my-3">
           <p>Git</p>
           <BsGit className="icon-skill" />
         </div>
@@ -45,7 +50,7 @@ const Skill = () => {
           <p>Github</p>
           <AiFillGithub className="icon-skill" />
         </div>
-      </div>
+      </main>
     </div>
   );
 };

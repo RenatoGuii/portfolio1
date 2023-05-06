@@ -1,0 +1,67 @@
+.container.main.form {
+    animation: textOpacity 2s;
+    background-color: rgb(23, 23, 23);
+    border: 1px solid $colorText;
+    margin: 30px auto 100px auto;
+    max-width: 697px;
+    padding: 15px 0px;
+
+    .title-form {
+        color: $colorText;
+        font-family: $textFont;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .text-form {
+        color: grey;
+        text-align: center;
+    }
+
+    .container.form {
+        display: flex;
+        flex-direction: column;
+
+        .input-form {
+            margin-bottom: 20px;
+        }
+
+        .button-form {
+            background-color: $colorText;
+            border: none;
+            color: black;
+            display: inline-block;
+            font-family: $titleFont;
+            letter-spacing: 1px;
+            margin: 20px auto 0 auto;
+            min-width: 49.6px;
+            transition: 0.5s;
+            width: 20%;
+    
+            &:hover {
+                background-color: black;
+                outline: 1px solid $colorText;
+                color: $colorText;
+                transition: 0.5s;
+            }
+        }
+
+        .input-form,
+        .textarea-form {
+            background-color: transparent;
+            border: 1px solid $colorText;
+            color: $colorText;
+            font-family: $textFont;
+            padding: 5px;
+
+            &::placeholder {
+                padding: 5px;
+                font-size: 15px;
+            }
+            &:focus {
+                border-color: rgb(255, 255, 255);
+                outline: none;
+            }
+        }
+    }
+}

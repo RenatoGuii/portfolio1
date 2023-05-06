@@ -1,98 +1,103 @@
-.title-project {
-    @include titlePage (300);
-    margin: 40px 0 30px 0;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-
-    .col-sm-6.col-md-3.project-item.my-3.mx-3 {
-        @include backgroundProject;
-        align-items: center;
-        border-bottom: 3px solid $colorText;
+.container.main.projects {
+    
+    .title-project {
+        @include titlePage (300);
+        margin: 40px 0 30px 0;
+    }
+    
+    .row {
+        animation: textOpacity 2s;
         display: flex;
-        height: 120px;
         justify-content: center;
-        padding: 0;
-        position: relative;
-        width: 250px;
-        
     
-        &:hover img {
-            filter: brightness(20%);
-        }
-    
-        &:hover .hover-info {
-            animation: menuProject 1s forwards;
-        }
-    
-        &:hover .textProject {
-            animation: menuProjectText 1s forwards;
-        }
-    
-        img {
-            filter: brightness(60%);
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            z-index: 0;
-        }
-    
-        .iconsProject {
-            position: absolute;
-            top: 0;
-            left: 5px;
-    
-            .iconProject {
-                color: $colorText;
-                margin: 0 1px;
-                width: 15px;
-            }
-        }
-    
-        .textProject {
-            color: $colorText;
-            font-family: $textFont;
-            letter-spacing: 1px;
-            margin: 0;
-            text-align: center;
-            z-index: 5;
-            
-        }
-    
-        .hover-info {
-            background-color: #050505;
-            bottom: -47px;
+        .col-sm-6.col-md-3.project-item.my-3.mx-3 {
+            @include backgroundProject;
+            align-items: center;
+            border-bottom: 3px solid $colorText;
             display: flex;
-            justify-content: space-between;
-            opacity: 0;
-            padding: 10px;
-            position: absolute;
-            width: 100%;
-    
-            &:hover + img{
-                filter: brightness(50%);
+            height: 120px;
+            justify-content: center;
+            padding: 0;
+            position: relative;
+            width: 250px;
+            
+        
+            &:hover img {
+                filter: brightness(20%);
             }
-    
-            span, a {
+        
+            &:hover .hover-info {
+                animation: menuProject 1s forwards;
+            }
+        
+            &:hover .textProject {
+                animation: menuProjectText 1s forwards;
+            }
+        
+            img {
+                filter: brightness(60%);
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                z-index: 0;
+            }
+        
+            .iconsProject {
+                position: absolute;
+                top: 0;
+                left: 5px;
+        
+                .iconProject {
+                    color: $colorText;
+                    margin: 0 1px;
+                    width: 15px;
+                }
+            }
+        
+            .textProject {
                 color: $colorText;
-                font-family: $titleFont;
+                font-family: $textFont;
+                letter-spacing: 1px;
+                margin: 0;
+                text-align: center;
+                z-index: 5;
+                
             }
-    
-            a {
-                text-decoration: none;
-                padding: 2px 4px;
-                transition: 0.5s;
-    
-                &:hover {
-                    outline: 1px solid $colorText;
+        
+            .hover-info {
+                background-color: #050505;
+                bottom: -47px;
+                display: flex;
+                justify-content: space-between;
+                opacity: 0;
+                padding: 10px;
+                position: absolute;
+                width: 100%;
+        
+                &:hover + img{
+                    filter: brightness(50%);
+                }
+        
+                span, a {
+                    color: $colorText;
+                    font-family: $titleFont;
+                }
+        
+                a {
+                    text-decoration: none;
+                    padding: 2px 4px;
                     transition: 0.5s;
+        
+                    &:hover {
+                        outline: 1px solid $colorText;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
     }
 }
+
 
 
 
